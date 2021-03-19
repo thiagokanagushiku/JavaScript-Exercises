@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        body{
+            background-color: rgb(131, 131, 212);
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, mundo</h1>
+    <p>
+        primeiro paragrafo
+    </p>
+    <div class = 'msg'>
+        Aprendendo a usar o <strong>DOM</strong> 
+    </p>
+    <script>
+        window.document.write(window.document.charset)  
+        window.document.write(window.navigator.appName)
+
+       var corpo = window.document.body
+       var p1 = window.document.getElementsByTagName('p')[0] //forma nova de selecionar elementos! 
+       p1.style.color = 'blue'
+       corpo.style.background = 'yellow'
+
+       var d = window.document.querySelector('div.msg')
+       d.style.background = 'white' 
+    </script>
+</body>
+</html>
